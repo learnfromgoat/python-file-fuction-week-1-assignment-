@@ -33,7 +33,16 @@ or
 fil = open("school_prompt.txt",'r')
 n = fil.read(30)
 
-#5. 
+#5. Challenge: Using the file school_prompt.txt, assign the third word of every line to a list called three.
+
+fil = open("school_prompt.txt","r")
+n = fil.readlines()
+print(n)
+three = []
+for word in n:
+    word = word.split()
+    three.append(word[2])
+print (three) 
 
 #6. Challenge: Create a list called emotions that contains the first word of every line in emotion_words.txt
 
